@@ -12,10 +12,10 @@ export default function Hero(){
                 <div class="pt-60 custom1 col-span-2 justify-center"></div>
             </div>
             <div class="grid grid-cols-6">
-                <div class="py-20 px-20 custom2 text-[#D9D9D950] col-span-4 flex justify-center">
+                <div class="p-20 custom2 text-[#D9D9D950] col-span-4 flex justify-center">
                     SOMETIMES IT’S JUST OUR FEELINGS THAT GET INVOLVED IN BETWEEN OUR HEART AND MIND, AND WE CAN’T TAKE THE DECISION WHICH IS RIGHT FOR US...
                 </div>
-                <div class="py-20 custom1 justify-center"></div>
+                <div class="py-20 custom2 justify-center"></div>
                 <div class="py-20 custom1 justify-center"></div>
             </div>
         </>

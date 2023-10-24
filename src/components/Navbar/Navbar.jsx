@@ -11,7 +11,7 @@ export default function Navbar(){
                     <div class="px-10">ABOUT</div>
                     <div class="pl-10">GALLERY</div>
                 </div>
-                <div class="py-8 custom1 text-[#D9D9D950] text-center">ADD+</div>
+                <div class="py-8 custom2 text-[#D9D9D950] text-center">ADD+</div>
                 <div class="py-8 custom1 text-white text-center">SIGN UP</div>
             </div>
         </>
