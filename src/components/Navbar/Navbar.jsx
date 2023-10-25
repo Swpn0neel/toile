@@ -4,15 +4,15 @@ import "./Navbar.css";
 export default function Navbar(){
     return(
         <>
-            <div class="flex flex-rows h-24">
-                <div class="basis-1/6 custom2 bg-[#d9d9d9] flex justify-center items-center">IMG</div>
-                <div class="basis-1/2 custom2 text-[#D9D9D950] flex justify-center items-center">
+            <div class="flex-rows flex h-24">
+                <div class="custom2 flex basis-1/6 items-center justify-center bg-[#d9d9d9]">IMG</div>
+                <div class="custom2 flex basis-1/2 items-center justify-center text-[#D9D9D950]">
                     <div class="pr-10">HOME</div>
                     <div class="px-10">ABOUT</div>
                     <div class="pl-10">GALLERY</div>
                 </div>
-                <div class="basis-1/6 custom2 text-[#D9D9D950] flex justify-center items-center">ADD+</div>
-                <div class="basis-1/6 custom1 text-white flex justify-center items-center">SIGN UP</div>
+                <div class="custom2 flex basis-1/6 items-center justify-center text-[#D9D9D950]">ADD+</div>
+                <div class="custom1 flex basis-1/6 items-center justify-center text-white">SIGN UP</div>
             </div>
         </>
     );
