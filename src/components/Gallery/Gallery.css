@@ -1,0 +1,12 @@
+.new1{
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: 2px solid rgba(255, 255, 255, 0.15);
+}
+  
+.new2{
+    border-right: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.viewh{
+    height: 105vh;
+}
