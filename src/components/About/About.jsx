@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.css";
 
-export default function Hero(){
+export default function About(){
     return(
         <>
             <div class="new3 flex flex-row">
                 <div class="flex basis-2/3 flex-col">
-                    <div class="new2 basis-1/3 pb-16 pl-20 pt-36 text-6xl text-white">About Us</div>
+                    <div class="new2 flex basis-1/3 items-end pb-16 pl-20 text-6xl text-white">About Us</div>
                     <div class="grid basis-2/3 grid-cols-2">
                         <div class="new1 p-5"></div>
                         <div class="new1 p-5"></div>
