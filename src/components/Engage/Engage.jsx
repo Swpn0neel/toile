@@ -4,8 +4,8 @@ import "./Engage.css";
 export default function Engage(){
     return(
         <>
-            <div class="unique2 flex flex-row">
-                <div class="new1 flex basis-2/3 flex-col justify-end gap-4 pb-16 pl-20 text-6xl text-white">
+            <div class="fontsm unique2 flex flex-row">
+                <div class="fontlg new1 flex basis-2/3 flex-col justify-end gap-4 pb-16 pl-20 text-6xl text-white">
                     <div>This is</div>
                     <div>the time to join</div>
                 </div>

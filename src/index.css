@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&family=Rubik&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +15,14 @@ body{
 
 html{
     scroll-behavior: smooth;
+}
+
+.fontlg{
+    font-family: "Roboto Serif";
+}
+
+.fontsm{
+    font-family: "Rubik";
 }
 
 ::-webkit-scrollbar{

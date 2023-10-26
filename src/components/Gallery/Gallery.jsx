@@ -4,9 +4,9 @@ import "./Gallery.css";
 export default function Gallery(){
     return(
         <>
-            <div class="viewh flex flex-row">
+            <div class="fontsm viewh flex flex-row">
                 <div class="flex basis-2/3 flex-col">
-                    <div class="new1 flex basis-1/3 items-end pb-16 pl-20 text-6xl text-white">Gallery</div>
+                    <div class="fontlg new1 flex basis-1/3 items-end pb-16 pl-20 text-6xl text-white">Gallery</div>
                     <div class="new1 basis-2/3"></div>
                 </div>
                 <div class="unique1 flex basis-1/3 flex-col">
