@@ -1,0 +1,16 @@
+.new1{
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: 2px solid rgba(255, 255, 255, 0.15);
+}
+  
+.new2{
+    border-right: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.unique1{
+    border-top: 2px solid rgba(6, 11, 25);
+}
+  
+.unique2{
+    height: 45vh;
+}

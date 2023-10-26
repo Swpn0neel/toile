@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Gallery from "./components/Gallery/Gallery";
 import Engage from "./components/Engage/Engage";
+import Footer from "./components/Footer/Footer";
 import './index.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About></About>
       <Gallery></Gallery>
       <Engage></Engage>
+      <Footer></Footer>
     </>
   )
 }
