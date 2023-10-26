@@ -9,6 +9,10 @@
     padding: 0px;
 }
 
+:root{
+    cursor: default;
+}
+
 body{
     background-color: #060B19;
 }
