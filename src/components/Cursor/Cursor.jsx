@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import "./Cursor.css";
 
-export default function About() {
+export default function Cursor() {
   useEffect(() => {
     const $bigBall = document.querySelector('.cursor__ball--big');
     const $smallBall = document.querySelector('.cursor__ball--small');
