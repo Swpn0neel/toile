@@ -12,7 +12,7 @@ export default function Navbar(){
                     <div className="pl-10">GALLERY</div>
                 </div>
                 <div className="custom2 flex basis-1/6 items-center justify-center text-[#D9D9D950]">ADD+</div>
-                <div className="custom1 new2 flex basis-1/6 items-center justify-center text-white">SIGN UP</div>
+                <div className="custom1 hoverable new2 flex basis-1/6 items-center justify-center text-white">SIGN UP</div>
             </div>
         </>
     );
