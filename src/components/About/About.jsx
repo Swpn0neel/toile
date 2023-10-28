@@ -6,7 +6,9 @@ export default function About(){
         <>
             <div className="fontsm new3 flex flex-row">
                 <div className="flex basis-2/3 flex-col">
-                    <div className="fontlg hoverable new2 flex basis-1/3 items-end pb-16 pl-20 text-6xl text-white">About Us</div>
+                    <div className="new2 flex basis-1/3 items-end pb-16 pl-20">
+                        <p className="fontlg hoverable text-6xl text-white">About Us</p>
+                    </div>
                     <div className="grid basis-2/3 grid-cols-2">
                         <div className="new1"><img src="assets/about/img1.png" className="w-full h-full object-cover opacity-50 hover:opacity-100 transition-all duration-500"></img></div>
                         <div className="new1"><img src="assets/about/img2.png" className="w-full h-full object-cover opacity-50 hover:opacity-100 transition-all duration-500"></img></div>

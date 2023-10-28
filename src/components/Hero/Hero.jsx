@@ -5,9 +5,9 @@ export default function Hero(){
     return(
         <>
             <div className="flex-rows flex">
-                <div className="fontlg custom2 flex basis-2/3 flex-col gap-4 pb-16 pl-20 pt-64 text-6xl text-white">
-                    <div className="hoverable">The Magic</div>
-                    <div className="hoverable">you need the most</div>
+                <div className="custom2 flex basis-2/3 flex-col gap-4 justify-end pb-16 pl-20">
+                    <p className="fontlg hoverable text-6xl text-white">The Magic</p>
+                    <p className="fontlg hoverable text-6xl text-white">you need the most</p>
                 </div>
                 <div className="custom1 hoverable basis-1/3 justify-center"><img src="assets/main.png" className="w-full h-full object-cover"></img></div>
             </div>
