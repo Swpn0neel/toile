@@ -4,7 +4,7 @@ import "./Gallery.css";
 export default function Gallery(){
     return(
         <>
-            <div className="fontsm viewh flex flex-row">
+            <div className="fontsm viewh flex flex-row" id="gallery">
                 <div className="flex basis-2/3 flex-col">
                     <div className="new1 flex basis-1/3 items-end pb-16 pl-20">
                         <p className="fontlg hoverable text-6xl text-white">Gallery</p>

@@ -10,7 +10,7 @@ export default function Engage(){
                     <span className="hoverable">the time to join</span>
                 </div>
                 <div className="flex basis-1/3 flex-col bg-[url('/assets/main.png')]">
-                    <div className="flex basis-1/3 items-center justify-center bg-[#D9D9D980] text-[#D060B19] hover:bg-[#D9D9D9] transition-all duration-500">GALLERY</div>
+                    <a href="#gallery" className="flex basis-1/3 items-center justify-center bg-[#D9D9D980] text-[#D060B19] hover:bg-[#D9D9D9] hover:cursor-none transition-all duration-500">GALLERY</a>
                     <div className="unique1 flex basis-1/3 items-center justify-center bg-[#D9D9D980] text-[#D060B19] hover:bg-[#D9D9D9] transition-all duration-500">CONTRIBUTE</div>
                     <div className="unique1 hoverable flex basis-1/3 items-center justify-center bg-[#D9D9D9] text-[#D060B19]">JOIN US NOW</div>
                 </div>

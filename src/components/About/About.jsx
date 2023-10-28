@@ -4,7 +4,7 @@ import "./About.css";
 export default function About(){
     return(
         <>
-            <div className="fontsm new3 flex flex-row">
+            <div className="fontsm new3 flex flex-row" id="about">
                 <div className="flex basis-2/3 flex-col">
                     <div className="new2 flex basis-1/3 items-end pb-16 pl-20">
                         <p className="fontlg hoverable text-6xl text-white">About Us</p>
