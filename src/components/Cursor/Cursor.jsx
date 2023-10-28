@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import "./Cursor.css";
 
@@ -18,17 +18,18 @@ export default function Cursor() {
     // Move the cursor
     function onMouseMove(e) {
       gsap.to($bigBall, {
-        duration: 0.4,
-        x: e.pageX - 15,
-        y: e.pageY - 15
+          duration: 0.001,
+          x: e.clientX - 15,
+          y: e.clientY - 15,
+          overwrite: "auto" // To avoid any potential overwrite issues
       });
       gsap.to($smallBall, {
-        duration: 0.1,
-        x: e.pageX - 5,
-        y: e.pageY - 7
+          duration: 0.005,
+          x: e.clientX - 5,
+          y: e.clientY - 7,
+          overwrite: "auto"
       });
-    }
-
+  }
     // Hover an element
     function onMouseHover() {
       gsap.to($bigBall, {
@@ -43,6 +44,15 @@ export default function Cursor() {
         scale: 1
       });
     }
+
+    gsap.set($bigBall, {
+      x: 0,
+      y: 0
+    });
+    gsap.set($smallBall, {
+      x: 0,
+      y: 0
+    });
   }, []); // Run once after component is mounted
 
   return (

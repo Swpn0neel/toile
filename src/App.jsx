@@ -10,13 +10,14 @@ import './index.css'
 function App() {
   return (
     <>
-      <Cursor/>
+      
       <Navbar/>
       <Hero/>
       <About/>
       <Gallery/>
       <Engage/>
       <Footer/>
+      <Cursor/>
     </>
   )
 }

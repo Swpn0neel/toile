@@ -1,15 +1,11 @@
-.cursor {
+.cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
     pointer-events: none;
-    
-        &__ball {
-        position: fixed;
-        top: 0;
-        left: 0;
-        mix-blend-mode: difference;
-        z-index: 1000;
-        
-        circle {
-            fill: #d9d9d9;
-        }
-    }      
+    circle {
+        fill: #d9d9d9;
+    }
 }
