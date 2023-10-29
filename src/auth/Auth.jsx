@@ -1,14 +1,15 @@
 import React from "react";
 import "./Auth.css";
+import Cursor from "../components/Cursor/Cursor";
 
 export default function Auth(){
     return(
         <>
-            <div className="fontsm flex h-screen flex-row">
+            <div className="fontsm flex h-screen flex-row" id="auth">
                 <div className="flex basis-2/12 flex-col">
-                    <div className="hoverable sborder2 flex basis-2/6 items-center justify-center bg-[#D9D9D9]">
+                    <a href="../" className="hoverable sborder2 flex basis-2/6 items-center justify-center bg-[#D9D9D9] hover:cursor-none">
                         <img src="assets/arrow_alt.svg" className="h-20 rotate-180 hover:-translate-x-5 transition-all duration-500"></img>
-                    </div>
+                    </a>
                     <div className="hoverable flex basis-5/6 items-center justify-center">
                         <img src="assets/logo.svg" width="45rem" className="hover:scale-125 transition-all duration-500"></img>
                     </div>
@@ -33,6 +34,7 @@ export default function Auth(){
                     </div>
                 </div>
             </div>
+            <Cursor />
         </>
     );
 }
