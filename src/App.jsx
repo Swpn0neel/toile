@@ -5,6 +5,7 @@ import Gallery from "./components/Gallery/Gallery";
 import Engage from "./components/Engage/Engage";
 import Footer from "./components/Footer/Footer";
 import Cursor from "./components/Cursor/Cursor";
+import Auth from "./auth/Auth";
 import './index.css'
 
 function App() {
