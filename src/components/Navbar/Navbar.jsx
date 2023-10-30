@@ -11,7 +11,7 @@ export default function Navbar(){
                     <div className="px-10 hover:text-[#d9d9d9] transition-all duration-100"><a href="#about" className="hover:cursor-none">ABOUT</a></div>
                     <div className="pl-10 hover:text-[#d9d9d9] transition-all duration-100"><a href="#gallery" className="hover:cursor-none">GALLERY</a></div>
                 </div>
-                <div className="custom2 flex basis-1/6 items-center justify-center text-[#D9D9D950] hover:text-[#d9d9d9] transition-all duration-100">ADD+</div>
+                <a href="contribute" className="custom2 flex basis-1/6 items-center justify-center text-[#D9D9D950] hover:text-[#d9d9d9] transition-all duration-100">ADD+</a>
                 <a href="auth" className="custom1 new2 hoverable flex basis-1/6 items-center justify-center text-white hover:bg-[#d9d9d9] hover:text-[#060B19] hover:cursor-none transition-all duration-500">SIGN UP</a>
             </div>
         </>

@@ -3,12 +3,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./Home";
 import Auth from "./auth/Auth";
+import Contribute from "./contribute/Contribute";
 import "./index.css";
 
 function App() {
     const router = createBrowserRouter([
         { path: "/", element: <Home /> },
         { path: "/auth", element: <Auth /> },
+        { path: "/contribute", element: <Contribute /> },
       ]);
     
       return (
