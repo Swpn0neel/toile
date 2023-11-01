@@ -43,50 +43,68 @@ export default function Login() {
             ></img>
           </div>
         </div>
-        <div className="sborder1 flex basis-8/12 flex-col">
-          <div className="sborder2 flex basis-5/12 items-end pb-16 pl-20">
-            <p className="fontlg hoverable text-6xl text-white">Sign In</p>
-          </div>
-          <form onSubmit={handleSubmit} ref={loginForm}>
-            <div className="flex basis-7/12 flex-col justify-center gap-8 bg-[#D9D9D9] pl-20 pr-64 text-[#060B1990]">
-              <input
-                required
-                type="email"
-                name="email"
-                placeholder="Enter email..."
-                className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
-              />
+        <form onSubmit={handleSubmit} ref={loginForm} className="grid grid-cols-5">
+          <div className="sborder1 flex col-span-4 flex-col">
+            <div className="sborder2 flex basis-5/12 items-end pb-16 pl-20">
+              <p className="fontlg hoverable text-6xl text-white">Sign In</p>
+            </div>
+            <div className="flex flex-col justify-center gap-8 basis-7/12 bg-[#D9D9D9] pl-20 pr-64 text-[#060B1990]">
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  placeholder="ENTER EMAIL"
+                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none"
+                />
+                <input
+                  type="password"
+                  required
+                  name="password"
+                  placeholder="ENTER PASSWORD"
+                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none"
+                />
+              </div>
+              {/* <form onSubmit={handleSubmit} ref={loginForm}>
+                <div className="flex basis-7/12 flex-col justify-center gap-8 bg-[#D9D9D9] pl-20 pr-64 text-[#060B1990]">
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    placeholder="Enter email..."
+                    className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
+                  />
 
-              <input
-                type="password"
-                required
-                name="password"
-                placeholder="Enter password..."
-                className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
-              />
+                  <input
+                    type="password"
+                    required
+                    name="password"
+                    placeholder="Enter password..."
+                    className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
+                  />
+                </div>
+                <input type="submit" value="Login" className="btn" />
+              </form> */}
             </div>
-            <input type="submit" value="Login" className="btn" />
+            <div className="flex basis-1/5 flex-col">
+              <div className="sborder2 hoverable flex basis-5/12 flex-col">
+                <div className="sborder2 flex basis-2/3 items-end justify-center px-12 pb-12 text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
+                  DONT HAVE AN ACCOUNT?
+                </div>
+                <Link
+                  to="/signup"
+                  className="flex basis-1/3 items-center justify-center text-[#D9D9D950] hover:bg-[#d9d9d9] cursor-none hover:text-[#060B19] transition-all duration-500"
+                >
+                  SIGN UP
+                </Link>
+              </div>
+              <button type="submit" value="Login" className="hoverable flex basis-7/12 items-center justify-center btn cursor-none">
+                <img
+                  src="assets/arrow.svg"
+                  className="h-20 hover:translate-x-5 transition-all duration-500"
+                ></img>
+              </button>
+            </div>
           </form>
-        </div>
-        <div className="flex basis-2/12 flex-col">
-          <div className="sborder2 hoverable flex basis-5/12 flex-col">
-            <div className="sborder2 flex basis-2/3 items-end justify-center px-12 pb-12 text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
-              DONT HAVE AN ACCOUNT?
-            </div>
-            <Link
-              to="/signup"
-              className="flex basis-1/3 items-center justify-center text-[#D9D9D950] hover:bg-[#d9d9d9] hover:text-[#060B19] transition-all duration-500"
-            >
-              SIGN UP
-            </Link>
-          </div>
-          <div className="hoverable flex basis-7/12 items-center justify-center">
-            <img
-              src="assets/arrow.svg"
-              className="h-20 hover:translate-x-5 transition-all duration-500"
-            ></img>
-          </div>
-        </div>
       </div>
       <Cursor />
     </>
