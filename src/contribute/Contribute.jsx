@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Contribute.css";
 import Cursor from "../components/Cursor/Cursor";
 
@@ -7,9 +8,9 @@ export default function Contribute(){
         <>
             <div className="fontsm flex h-screen flex-row">
                 <div className="flex basis-1/6 flex-col">
-                    <a href="../" className="sborder2 hoverable flex basis-1/3 items-center justify-center bg-[#D9D9D9] hover:cursor-none">
+                    <Link to="/" className="sborder2 hoverable flex basis-1/3 items-center justify-center bg-[#D9D9D9] hover:cursor-none">
                         <img src="assets/arrow_alt.svg" className="h-20 rotate-180 hover:-translate-x-5 transition-all duration-500"></img>
-                    </a>
+                    </Link>
                     <div className="hoverable flex basis-2/3 items-center justify-center">
                         <img src="assets/logo.svg" width="45rem" className="hover:scale-125 transition-all duration-500"></img>
                     </div>
