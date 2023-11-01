@@ -54,36 +54,16 @@ export default function Login() {
                   type="email"
                   name="email"
                   placeholder="ENTER EMAIL"
-                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none"
+                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-[700px] cursor-none"
                 />
                 <input
                   type="password"
                   required
                   name="password"
                   placeholder="ENTER PASSWORD"
-                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none"
+                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-[700px] cursor-none"
                 />
               </div>
-              {/* <form onSubmit={handleSubmit} ref={loginForm}>
-                <div className="flex basis-7/12 flex-col justify-center gap-8 bg-[#D9D9D9] pl-20 pr-64 text-[#060B1990]">
-                  <input
-                    required
-                    type="email"
-                    name="email"
-                    placeholder="Enter email..."
-                    className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
-                  />
-
-                  <input
-                    type="password"
-                    required
-                    name="password"
-                    placeholder="Enter password..."
-                    className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
-                  />
-                </div>
-                <input type="submit" value="Login" className="btn" />
-              </form> */}
             </div>
             <div className="flex basis-1/5 flex-col">
               <div className="sborder2 hoverable flex basis-5/12 flex-col">
