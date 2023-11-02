@@ -19,7 +19,7 @@ export default function Gallery() {
           </div>
         </div>
         <div className="unique1 flex basis-1/3 flex-col">
-          <div className="flex basis-3/5 flex-col justify-center bg-[#D9D9D9] px-24 py-36 text-[#D060B19]">
+          <div className="flex basis-3/4 flex-col bg-[#D9D9D9] px-24 pt-36 text-[#D060B19]">
             <div className="hoverable flex flex-row pb-12 text-4xl font-bold">
               <p className="">{galleryimages[currImg].id}</p> /{" "}
               <p>{galleryimages.length}</p>
@@ -31,7 +31,7 @@ export default function Gallery() {
               {galleryimages[currImg].description}
             </div>
           </div>
-          <div className="flex basis-2/5 flex-row">
+          <div className="flex basis-1/4 flex-row">
             <div
               onClick={() => {
                 const prevImg =

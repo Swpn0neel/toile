@@ -20,7 +20,7 @@ export default function Footer(){
                         <div className="">3</div>
                         <div className="">4</div>
                     </div>
-                    <div className="pt-8">© CREATED BY SWAPNONEEL SAHA</div>
+                    <div className="pt-8">© CREATED BY SWAPNONEEL SAHA & ARINDAM MAJUMDER</div>
                 </div>
             </div>
         </>

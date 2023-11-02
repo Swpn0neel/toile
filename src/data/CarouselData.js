@@ -1,17 +1,17 @@
 export const images = [
   {
-    title: "San Diego",
-    subtitle: "This is San Diego",
-    img: "https://images.pexels.com/photos/140039/pexels-photo-140039.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "main1",
+    subtitle: "desc1",
+    img: "https://raw.githubusercontent.com/Swpn0neel/toile/main/public/assets/main.png",
   },
   {
-    title: "Salvador, Brazil",
-    subtitle: "The Best City in the World",
-    img: "https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "main2",
+    subtitle: "desc2",
+    img: "https://images.saatchiart.com/saatchi/1782149/art/8549510/7613355-GLAGBUAW-7.jpg",
   },
   {
-    title: "UBC (Vancouver)",
-    subtitle: "The University of British Columbia",
-    img: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "main3",
+    subtitle: "desc3",
+    img: "https://images.saatchiart.com/saatchi/1748395/art/8472002/7536141-TYVLYSSK-7.jpg",
   },
 ];

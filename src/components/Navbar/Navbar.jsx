@@ -31,7 +31,7 @@ export default function Navbar() {
         </div>
         <Link
           to="contribute"
-          className="custom2 flex basis-1/6 items-center justify-center text-[#D9D9D950] hover:text-[#d9d9d9] transition-all duration-100"
+          className="custom2 flex basis-1/6 items-center justify-center cursor-none text-[#D9D9D950] hover:text-[#d9d9d9] transition-all duration-100"
         >
           ADD+
         </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
             onClick={logoutUser}
             className="custom1 new2 hoverable flex basis-1/6 items-center justify-center text-white hover:bg-[#d9d9d9] hover:text-[#060B19] hover:cursor-none transition-all duration-500"
           >
-            Log Out
+            LOG OUT
           </button>
         ) : (
           <Link
