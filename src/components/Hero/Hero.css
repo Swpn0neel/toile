@@ -11,3 +11,15 @@
 .heroh{
     height: 57vh;
 }
+
+.transition-entering {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+  
+.transition-exiting {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
