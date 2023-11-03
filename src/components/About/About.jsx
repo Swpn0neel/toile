@@ -23,7 +23,7 @@ export default function About(){
                             SOMETIMES IT’S JUST OUR FEELINGS THAT GET INVOLVED IN BETWEEN OUR HEART AND MIND, AND WE CAN’T TAKE THE DECISION WHICH IS RIGHT FOR US. IT MAKES THINGS A LITTLE BIT MESSY FOR SURE BUT WHO CARES, IT’S ALL ABOUT OUR MINDSET AND WHAT WE THINK ABOUT THE WORLD AROUND US. IT’S BETTER TO KEEP THINGS SIMPLE, AND NOT GET DISAPPOINTED.
                         </p>    
                     </div>
-                    <Link to="/signup" className="flex hoverable basis-1/6 items-center justify-center bg-[#D9D9D9] text-[#D060B19]">JOIN US NOW</Link>
+                    <Link to="/signup" className="flex hoverable basis-1/6 items-center justify-center cursor-none bg-[#D9D9D9] text-[#D060B19]">JOIN US NOW</Link>
                 </div>
             </div>
         </>

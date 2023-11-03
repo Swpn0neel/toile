@@ -6,7 +6,7 @@ export default function Hero() {
   const [currImg, setCurrImg] = useState(0);
   return (
     <>
-      <div className="flex-rows flex">
+      <div className="flex-rows flex heroh">
         <div className="custom2 flex basis-2/3 flex-col gap-4 justify-end pb-16 pl-20">
           <p className="fontlg hoverable text-6xl text-white">The Magic</p>
           <p className="fontlg hoverable text-6xl text-white">
