@@ -1,16 +1,13 @@
-import { database } from "../appwrite/appwriteConfig";
+import { database, storage } from "../appwrite/appwriteConfig";
 import { ID } from "appwrite";
 
 const databaseID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
 const collectionID = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
-
-console.log("databaseID", databaseID);
-console.log("collectionID", collectionID);
-// const bucketId= import.meta.env.VITE_APPWRITE_BUCKET_ID
+const bucketId = import.meta.env.VITE_APPWRITE_BUCKET_ID;
 
 const creatUserDocument = async (userData) => {
   try {
-    return database.createDocument(
+    return await database.createDocument(
       databaseID,
       collectionID,
       ID.unique(),
@@ -22,7 +19,7 @@ const creatUserDocument = async (userData) => {
 };
 const getUserDocuments = async () => {
   try {
-    return database.listDocuments(databaseID, collectionID);
+    return await database.listDocuments(databaseID, collectionID);
   } catch (e) {
     console.error(e.message);
   }
@@ -35,7 +32,7 @@ const updateUserDocument = async ({
   image,
 }) => {
   try {
-    return database.updateDocument(databaseID, collectionID, documentID, {
+    return await database.updateDocument(databaseID, collectionID, documentID, {
       title,
       description,
       image,
@@ -53,9 +50,38 @@ const deleteUserDocument = async (documentID) => {
   }
 };
 
+// File upload
+const uploadFile = async (file) => {
+  try {
+    return await storage.createFile(bucketId, ID.unique(), file);
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
+};
+const deleteFile = async (fileId) => {
+  try {
+    return await storage.deleteFile(bucketId, fileId);
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
+};
+const getFilePreview = (fileId) => {
+  return storage.getFilePreview(bucketId, fileId);
+};
+
+const getFile = () => {
+  return storage.listFiles(bucketId);
+};
+
 export {
   creatUserDocument,
   getUserDocuments,
   updateUserDocument,
   deleteUserDocument,
+  uploadFile,
+  deleteFile,
+  getFilePreview,
+  getFile,
 };
