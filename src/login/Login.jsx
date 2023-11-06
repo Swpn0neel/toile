@@ -58,7 +58,7 @@ export default function Login() {
                 type="email"
                 name="email"
                 placeholder="ENTER EMAIL"
-                className="hoverable outline-none  sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none "
+                className="hoverable outline-none sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none "
               />
               <input
                 type="password"
@@ -68,58 +68,11 @@ export default function Login() {
                 className="hoverable outline-none sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none"
               />
             </div>
-            {/* <form onSubmit={handleSubmit} ref={loginForm}>
-                <div className="flex basis-7/12 flex-col justify-center gap-8 bg-[#D9D9D9] pl-20 pr-64 text-[#060B1990]">
-                  <input
-                    required
-                    type="email"
-                    name="email"
-                    placeholder="Enter email..."
-                    className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
-                  />
-
-                  <input
-                    type="password"
-                    required
-                    name="password"
-                    placeholder="Enter password..."
-                    className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500"
-                  />
-                </div>
-                <input type="submit" value="Login" className="btn" />
-              </form> */}
           </div>
           <div className="flex basis-1/5 flex-col">
             <div className="sborder2 hoverable flex basis-5/12 flex-col">
               <div className="sborder2 flex basis-2/3 items-end justify-center px-12 pb-12 text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
                 DONT HAVE AN ACCOUNT?
-                {/* <input
-                  required
-                  type="email"
-                  name="email"
-                  placeholder="ENTER EMAIL"
-                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-[700px] cursor-none"
-                />
-                <input
-                  type="password"
-                  required
-                  name="password"
-                  placeholder="ENTER PASSWORD"
-                  className="hoverable sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-[700px] cursor-none"
-                />
-              </div>
-            </div>
-            <div className="flex basis-1/5 flex-col">
-              <div className="sborder2 hoverable flex basis-5/12 flex-col">
-                <div className="sborder2 flex basis-2/3 items-end justify-center px-12 pb-12 text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
-                  DONT HAVE AN ACCOUNT?
-                </div>
-                <Link
-                  to="/signup"
-                  className="flex basis-1/3 items-center justify-center text-[#D9D9D950] hover:bg-[#d9d9d9] cursor-none hover:text-[#060B19] transition-all duration-500"
-                >
-                  SIGN UP
-                </Link> */}
               </div>
               <Link
                 to="/signup"
