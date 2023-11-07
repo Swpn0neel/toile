@@ -28,11 +28,11 @@ export default function Gallery() {
     });
   }, [currImg]);
 
-  console.log(documents[currImg]);
+  // console.log(documents[currImg]);
   // console.log(imageID);
-  console.log(title);
-  console.log(description);
-  console.log(imageSRC);
+  // console.log(title);
+  // console.log(description);
+  // console.log(imageSRC);
   getFile();
 
   return (
