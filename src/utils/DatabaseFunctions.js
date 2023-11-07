@@ -71,6 +71,10 @@ const getFilePreview = (fileId) => {
   return storage.getFilePreview(bucketId, fileId);
 };
 
+const getFileView = (fileId) => {
+  return storage.getFileView(bucketId, fileId);
+};
+
 const getFile = () => {
   return storage.listFiles(bucketId);
 };
@@ -84,4 +88,5 @@ export {
   deleteFile,
   getFilePreview,
   getFile,
+  getFileView
 };
