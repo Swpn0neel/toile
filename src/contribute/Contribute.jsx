@@ -14,7 +14,6 @@ import {
 } from "../utils/DatabaseFunctions";
 
 export default function Contribute() {
-  //   const [imageList, setImageList] = React.useState();
   const [image, setImage] = React.useState();
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -25,7 +24,6 @@ export default function Contribute() {
   }, []);
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     await uploadFile(image).then((file) => {
       // console.log("The File Id is " + file.$id);
       const temp = String(file.$id);
@@ -120,11 +118,10 @@ export default function Contribute() {
               ></textarea>
             </div>
             <div className="hoverable flex basis-1/6 items-center justify-center bg-[#D9D9D9] text-[#060B19]">
-              ADD+
               <input
                 className="btn btn--secondary"
                 type="submit"
-                value="send"
+                value="ADD+"
               />
             </div>
           </div>

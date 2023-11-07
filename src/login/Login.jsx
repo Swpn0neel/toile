@@ -58,7 +58,7 @@ export default function Login() {
                 type="email"
                 name="email"
                 placeholder="ENTER EMAIL"
-                className="hoverable outline-none  sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none "
+                className="hoverable outline-none sborder3 pb-2 hover:text-[#060B19] transition-all duration-500 bg-[#D9D9D9] w-96 cursor-none "
               />
               <input
                 type="password"
