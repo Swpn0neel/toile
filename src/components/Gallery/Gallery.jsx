@@ -12,7 +12,7 @@ export default function Gallery() {
 
   const [documents, setDocuments] = useState([]);
   // const [imageID, setImageID] = React.useState();
-  const [imageSRC, setImageSRC] = React.useState();
+  const [imageSRC, setImageSRC] = React.useState("");
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
 
@@ -23,7 +23,7 @@ export default function Gallery() {
         // setImageID(data.documents[currImg].image);
         setTitle(data.documents[currImg].title);
         setDescription(data.documents[currImg].description);
-        setImageSRC(getFileView(data.documents[currImg].image));
+        setImageSRC(getFileView(data.documents[currImg].image).href);
       }
     });
   }, [currImg]);
