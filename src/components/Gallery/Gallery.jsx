@@ -37,9 +37,9 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="fontsm viewh flex flex-row" id="gallery">
+      <div className="fontsm sm:viewh flex max-sm:flex-col" id="gallery">
         <div className="flex basis-2/3 flex-col">
-          <div className="new1 flex basis-1/3 items-end pb-16 pl-20">
+          <div className="new1 flex basis-1/3 items-end pt-24 pb-5 sm:pb-16 sm:pl-20 pl-8">
             <p className="fontlg hoverable text-6xl text-white">Gallery</p>
           </div>
           <div className="new1 hoverable basis-2/3">
@@ -50,21 +50,21 @@ export default function Gallery() {
           </div>
         </div>
         <div className="unique1 flex basis-1/3 flex-col">
-          <div className="flex basis-3/4 flex-col bg-[#D9D9D9] px-24 pt-36 text-[#D060B19]">
-            <div className="hoverable flex flex-row pb-12 text-4xl font-bold">
+          <div className="flex basis-3/4 flex-col bg-[#D9D9D9] sm:px-24 px-8 sm:pt-36 pt-10 max-sm:pb-10 text-[#D060B19]">
+            <div className="hoverable flex flex-row sm:pb-12 pb-8 text-4xl font-bold">
               <p className="">{[currImg + 1]}</p> / <p>{documents.length}</p>
             </div>
             <div className="hoverable pb-8 text-xl font-bold">{title}</div>
             <div className="hoverable">{description}</div>
           </div>
-          <div className="flex basis-1/4 flex-row">
+          <div className="flex basis-1/4 flex-row ">
             <div
               onClick={() => {
                 const prevImg =
                   currImg > 0 ? currImg - 1 : documents.length - 1;
                 setCurrImg(prevImg);
               }}
-              className="new1 hoverable basis-1/2 flex justify-center items-center"
+              className="new1 hoverable basis-1/2 flex justify-center items-center max-sm:py-10"
             >
               <img
                 src="assets/arrow.svg"
