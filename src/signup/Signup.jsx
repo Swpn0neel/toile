@@ -40,24 +40,24 @@ export default function Signup() {
               className="h-20 max-sm:h-12 rotate-180 hover:-translate-x-5 transition-all duration-500"
             ></img>
           </Link>
-          <div className="hoverable max-sm:h-24 flex basis-5/6 items-center justify-center">
+          <div className="hoverable max-sm:border-b-2 max-sm:border-[#FFFFFF15] flex basis-5/6 items-center justify-center">
             <img
               src="assets/logo.svg"
               width="45rem"
-              className="hover:scale-125 transition-all duration-500"
+              className="hover:scale-125 max-sm:scale-75 transition-all duration-500"
             ></img>
           </div>
         </div>
         <form
           onSubmit={handleSubmit}
           ref={registerForm}
-          className="grid sm:grid-cols-5"
+          className="grid max-sm:grid-cols-1 sm:grid-cols-5"
         >
-          <div className="sborder1 flex col-span-4 flex-col ">
-            <div className="sborder2 flex basis-5/12 items-end sm:pb-16 max-sm:pt-24 pb-10 sm:pl-20 pl-8">
+          <div className="sm:border-r-2 sm:border-l-2 border-[#FFFFFF15] flex col-span-4 flex-col">
+            <div className="flex basis-5/12 items-end sm:pb-16 max-sm:pt-24 pb-10 sm:pl-20 pl-8">
               <p className="fontlg hoverable text-6xl text-white">Sign Up</p>
             </div>
-            <div className="flex flex-col justify-center gap-8 basis-7/12 bg-[#D9D9D9] sm:pl-20 sm:pr-64 max-sm:py-10 pl-8 pr-8 text-[#060B1990]">
+            <div className="flex flex-col justify-center gap-8 basis-7/12 bg-[#D9D9D9] sm:pl-20 sm:pr-64 max-sm:py-10 px-8 text-[#060B1990]">
               <input
                 required
                 type="text"
@@ -90,13 +90,13 @@ export default function Signup() {
             </div>
           </div>
           <div className="flex basis-1/5 sm:flex-col flex-col-reverse">
-            <div className="sborder2 hoverable flex basis-5/12 sm:flex-col">
-              <div className="sborder2 flex basis-2/3 max-sm:basis-3/4 items-end justify-center sm:px-12 pl-10 pr-0 pb-12 text-[#D9D9D950] hover:text-[#D9D9D9] max-sm:pt-10 transition-all duration-500">
+            <div className="hoverable flex basis-5/12 sm:flex-col">
+              <div className="border-b-2 border-[#FFFFFF15] max-sm:border-r-2 max-sm:border-[#FFFFFF15] flex basis-2/3 max-sm:basis-3/5 items-end justify-center sm:px-12 max-sm:px-8 sm:pb-12 text-[#D9D9D950] hover:text-[#D9D9D9] max-sm:py-10 transition-all duration-500">
                 ALREADY HAVE AN ACCOUNT?
               </div>
               <Link
                 to="/signin"
-                className="flex basis-1/3 max-sm:basis-1/4 items-center justify-center text-[#D9D9D950] hover:bg-[#d9d9d9] cursor-none hover:text-[#060B19] transition-all duration-500"
+                className="border-b-2 border-[#FFFFFF15] flex basis-1/3 max-sm:basis-2/5 items-center justify-center text-[#D9D9D950] hover:bg-[#d9d9d9] cursor-none hover:text-[#060B19] transition-all duration-500"
               >
                 SIGN IN
               </Link>
@@ -104,7 +104,7 @@ export default function Signup() {
             <button
               type="submit"
               value="register"
-              className="hoverable flex basis-7/12 max-sm:py-6 max-sm:pl-10 sm:items-center justify-center btn cursor-none"
+              className="hoverable max-sm:border-b-2 max-sm:border-[#FFFFFF15] flex basis-7/12 max-sm:py-6 sm:items-center justify-center btn cursor-none"
             >
               <img
                 src="assets/arrow.svg"
