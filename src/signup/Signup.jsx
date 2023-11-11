@@ -30,7 +30,7 @@ export default function Signup() {
   return (
     <>
       <div className="fontsm flex h-screen max-sm:flex-col" id="signup">
-        <div className="flex basis-2/12 sm:flex-col">
+        <div className="flex sm:basis-2/12 basis-2/12  sm:flex-col">
           <Link
             to="/"
             className="hoverable sborder2 flex basis-2/6 items-center justify-center bg-[#D9D9D9] hover:cursor-none"

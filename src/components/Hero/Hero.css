@@ -1,25 +1,21 @@
-.custom1{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-    background: #060B19;
-}
-  
-.custom2{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
-    border-right: 2px solid rgba(255, 255, 255, 0.15);
+.custom1 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  background: #060b19;
 }
 
-.heroh{
-    height: 85vh;
+.custom2 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .transition-entering {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
 }
-  
+
 .transition-exiting {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
 }

@@ -18,7 +18,7 @@ export default function Footer() {
             US.
           </div>
         </div>
-        <div className="sm:new1 flex basis-1/3 flex-col justify-center gap-5 sm:pl-20 pl-8 max-sm:pb-10  sm:pt-20 pb-10 text-[#D9D9D950]">
+        <div className="sm:new1 new2 flex basis-1/3 flex-col justify-center gap-5 sm:pl-20 pl-8 max-sm:pb-10  sm:pt-20 pb-10 text-[#D9D9D950]">
           <div className="text-2xl">SOCIALS</div>
           <div className="hoverable flex flex-row gap-7">
             <div className="">1</div>
@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="">3</div>
             <div className="">4</div>
           </div>
-          <div className="sm:pt-8">
+          <div className="sm:pt-8 max-sm:pr-10">
             © CREATED BY SWAPNONEEL SAHA & ARINDAM MAJUMDER
           </div>
         </div>
