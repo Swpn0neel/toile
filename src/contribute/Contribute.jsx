@@ -35,8 +35,8 @@ export default function Contribute() {
   };
   return (
     <>
-      <div className="fontsm flex h-screen flex-row">
-        <div className="flex basis-1/6 flex-col">
+      <div className="fontsm flex sm:h-screen max-sm:flex-col">
+        <div className="flex basis-1/6 sm:flex-col">
           <Link
             to="/"
             className="sborder2 hoverable flex basis-1/3 items-center justify-center bg-[#D9D9D9] hover:cursor-none"
@@ -55,25 +55,10 @@ export default function Contribute() {
           </div>
         </div>
         <div className="sborder1 flex basis-7/12 flex-col">
-          <div className="sborder2 flex basis-5/12 items-end pb-16 pl-20">
+          <div className="sborder2 flex basis-5/12 items-end sm:pb-16 pl-8 max-sm:pt-20 pb-10 sm:pl-20">
             <p className="fontlg hoverable text-6xl text-white">Contribute</p>
           </div>
           <div className="flex basis-7/12 flex-col items-center justify-center gap-3">
-            {/* Added functionality */}
-            {/* {preview && (
-              <div className="flex basis-1/2 items-center justify-center gap-3">
-                <img src={preview} alt="" className="h-96 w-96"></img>
-                <button
-                  onClick={() => {
-                    setImage(null);
-                  }}
-                  className="hoverable"
-                >
-                  <img src="/assets/plus.svg" className="h-8"></img>
-                </button>
-              </div>
-            )} */}
-
             {preview ? (
               <div className="">
                 <img src={preview} alt="" className="h-full w-full"></img>
@@ -87,7 +72,7 @@ export default function Contribute() {
                 </button>
               </div>
             ) : (
-              <div className="">
+              <div className="max-sm:py-20">
                 <label
                   htmlFor="customFileInput"
                   className="flex flex-col justify-center gap-3 cursor-none"
@@ -114,7 +99,7 @@ export default function Contribute() {
           </div>
         </div>
         <form onSubmit={handleSubmit} className="flex basis-1/4 flex-col">
-          <div className="sborder2 flex basis-1/3 flex-col items-center justify-center gap-3">
+          <div className="sborder2 max-sm:pt-7  flex basis-1/3 flex-col items-center justify-center gap-3">
             <div className="hoverable basis-1/2 flex items-end">
               <img src="/assets/plus.svg" className="h-8"></img>
             </div>
@@ -122,7 +107,7 @@ export default function Contribute() {
               required
               maxLength="250"
               placeholder="[ADD THE TITLE/]"
-              className="basis-1/2 appearance-none resize-none outline-none w-full h-full px-5 pb-5 bg-[#060B19] text-center text-[#D9D9D9] cursor-none"
+              className="basis-1/2 appearance-none resize-none outline-none w-full h-full px-5 sm:pb-5 bg-[#060B19] text-center text-[#D9D9D9] cursor-none"
               onChange={(e) => {
                 let temp = e.target.value.toUpperCase();
                 setTitle(temp);
@@ -130,7 +115,7 @@ export default function Contribute() {
               value={title}
             ></textarea>
           </div>
-          <div className="sborder2 flex basis-1/2 flex-col items-center justify-center gap-3">
+          <div className="sborder2 flex max-sm:pt-7 basis-1/2 flex-col items-center justify-center gap-3">
             <div className="hoverable basis-1/2 flex items-end">
               <img src="/assets/plus.svg" className="h-8"></img>
             </div>
@@ -138,14 +123,14 @@ export default function Contribute() {
               required
               maxLength="1000"
               placeholder="[ADD DESCRIPTION/]"
-              className="basis-1/2 appearance-none resize-none outline-none w-full h-full px-5 pb-5 bg-[#060B19] text-center text-[#D9D9D9] cursor-none"
+              className="basis-1/2 appearance-none resize-none outline-none w-full h-full px-5 sm:pb-5 bg-[#060B19] text-center text-[#D9D9D9] cursor-none"
               onChange={(e) => {
                 setDescription(e.target.value.toUpperCase());
               }}
               value={description}
             ></textarea>
           </div>
-          <div className="hoverable flex basis-1/6 items-center justify-center bg-[#D9D9D9] text-[#060B19]">
+          <div className="hoverable flex max-sm:py-12 basis-1/6 items-center justify-center bg-[#D9D9D9] text-[#060B19]">
             <input
               className="btn btn--secondary cursor-none"
               type="submit"
