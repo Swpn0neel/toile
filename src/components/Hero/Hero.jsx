@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="custom2 max-sm:order-3  flex max-sm:col-span-2 row-span-2">
           <img
             src={images[currImg].img}
-            className="sm:w-full sm:h-full  object-cover"
+            className="sm:w-full sm:h-full object-cover"
           />
         </div>
 
