@@ -37,7 +37,7 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="fontsm sm:viewh flex max-sm:flex-col" id="gallery">
+      <div className="fontsm sm:h-[108vh] flex max-sm:flex-col" id="gallery">
         <div className="flex basis-2/3 flex-col">
           <div className="new1 flex basis-1/3 items-end pt-24 pb-8 sm:pb-16 sm:pl-20 pl-8">
             <p className="fontlg hoverable text-6xl text-white">Gallery</p>
