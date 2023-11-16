@@ -5,7 +5,7 @@ import "./Engage.css";
 export default function Engage() {
   return (
     <>
-      <div className="fontsm sm:unique2 flex max-sm:flex-col">
+      <div className="fontsm sm:h-[50vh] flex max-sm:flex-col">
         <div className="fontlg new1 flex basis-2/3 flex-col justify-end gap-4 sm:pb-16 pt-20 max-sm:pb-10 sm:pl-20 pl-8 sm:text-6xl text-4xl text-white">
           <span className="hoverable">This is</span>
           <span className="hoverable">the time to join</span>

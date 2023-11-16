@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <>
-      <div className="fontsm sm:unique2 flex max-sm:flex-col">
+      <div className="fontsm sm:h-[45vh] flex max-sm:flex-col">
         <div className="new1 flex basis-2/3 flex-col justify-center gap-4 sm:pl-20 pl-8 max-sm:pb-10 max-sm:pt-10 pt-20 pb-10 sm:pr-96 pr-10">
           <div className="flex flex-row gap-3">
             <div className="items-center justify-center max-sm:h-6 max-sm:w-6">
