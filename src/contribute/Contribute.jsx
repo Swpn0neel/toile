@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Contribute.css";
 import Cursor from "../components/Cursor/Cursor";
+import { Toaster, toast } from "sonner";
 import {
   creatUserDocument,
   uploadFile,
@@ -19,7 +20,7 @@ export default function Contribute() {
   React.useEffect(() => {
     getFile();
     console.log(image);
-  }, []);
+  }, [image]);
   const handleSubmit = async (e) => {
     e.preventDefault();
     await uploadFile(image).then((file) => {
@@ -31,6 +32,10 @@ export default function Contribute() {
         image: temp,
       };
       creatUserDocument(userData);
+      toast.success("Event has been created");
+      setImage(null);
+      setTitle("");
+      setDescription("");
     });
   };
   return (
@@ -139,6 +144,7 @@ export default function Contribute() {
           </div>
         </form>
       </div>
+      <Toaster richColors expand={false} position="top-right" />
       <Cursor />
     </>
   );
