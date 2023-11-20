@@ -16,7 +16,7 @@ function App() {
           <Route path="/signin" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route element={<PrivateRoutes />}>
-            <Route path="/contribute" element={<Contribute />} />
+            <Route path="/:contribute" element={<Contribute />} />
           </Route>
         </Routes>
       </AuthProvider>
