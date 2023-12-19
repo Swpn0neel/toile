@@ -13,18 +13,23 @@ export default function Footer() {
             <div className="text-2xl text-white flex items-end">TOILE</div>
           </div>
           <div className="hoverable text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500 ">
-            SOMETIMES IT’S JUST OUR FEELINGS THAT GET INVOLVED IN BETWEEN OUR
-            HEART AND MIND, AND WE CAN’T TAKE THE DECISION WHICH IS RIGHT FOR
-            US.
+            EMBARK ON A CAPTIVATING ODYSSEY THROUGH THE VAST REALM OF ARTISTIC EXPLORATION, 
+            WHERE THE LUMINOUS TAPESTRY OF DESIGN INTERTWINES WITH THE VERY FABRIC OF 
+            INSPIRATION.
           </div>
         </div>
         <div className="sm:new1 new2 flex basis-1/3 flex-col justify-center gap-5 sm:pl-20 pl-8 max-sm:pb-10  sm:pt-20 pb-10 text-[#D9D9D950]">
           <div className="text-2xl">SOCIALS</div>
           <div className="hoverable flex flex-row gap-7">
-            <div className="">1</div>
-            <div className="">2</div>
-            <div className="">3</div>
-            <div className="">4</div>
+            <a href="https://twitter.com/swapnoneel123" className="hover:cursor-none">
+              <img src="assets/socials/twitter.svg" alt="twitter" className="w-8" />
+            </a>
+            <a href="https://github.com/Swpn0neel/toile" className="hover:cursor-none">
+              <img src="assets/socials/github.svg" alt="github" className="w-8" />
+            </a>
+            <a href="https://www.instagram.com/swapnoneel111/" className="hover:cursor-none">
+              <img src="assets/socials/insta.svg" alt="instagram" className="w-8" />
+            </a>
           </div>
           <div className="sm:pt-8 max-sm:pr-10">
             © CREATED BY SWAPNONEEL SAHA & ARINDAM MAJUMDER

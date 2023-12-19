@@ -26,9 +26,9 @@ export default function Hero() {
 
         <div className="custom2 max-sm:order-4 col-span-2 flex items-center justify-center sm:px-20 max-sm:py-10 max-sm:pr-8 pl-8 sm:pl-20">
           <p className="hoverable text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
-            SOMETIMES IT’S JUST OUR FEELINGS THAT GET INVOLVED IN BETWEEN OUR
-            HEART AND MIND, AND WE CAN’T TAKE THE DECISION WHICH IS RIGHT FOR
-            US...
+          EMBARK ON A JOURNEY OF ARTISTIC DISCOVERY, WHERE INSPIRATION WEAVES 
+          THROUGH THE TAPESTRY OF DESIGN, AND THE REALMS OF ART UNFOLD IN THE 
+          MASTERPIECES CRAFTED BY RENOWNED VISIONARIES.
           </p>
         </div>
 

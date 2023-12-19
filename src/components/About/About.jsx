@@ -40,12 +40,17 @@ export default function About() {
         <div className="flex basis-1/3 flex-col">
           <div className="new2 flex basis-5/6 items-center justify-center sm:p-20 max-sm:py-10 px-8 py-8 text-[#D9D9D950]">
             <p className="hoverable text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
-              SOMETIMES IT’S JUST OUR FEELINGS THAT GET INVOLVED IN BETWEEN OUR
+            EMBARK ON A CAPTIVATING ODYSSEY THROUGH THE VAST REALM OF ARTISTIC EXPLORATION, 
+            WHERE THE LUMINOUS TAPESTRY OF DESIGN INTERTWINES WITH THE VERY FABRIC OF 
+            INSPIRATION. IN THIS ENRICHING JOURNEY, DELVE INTO THE KALEIDOSCOPIC WORLD 
+            OF RENOWNED ARTISTS, WHOSE MASTERPIECES SERVE AS PORTALS TO PROFOUND 
+            UNDERSTANDING AND CREATIVE TRANSCENDENCE.
+              {/* SOMETIMES IT’S JUST OUR FEELINGS THAT GET INVOLVED IN BETWEEN OUR
               HEART AND MIND, AND WE CAN’T TAKE THE DECISION WHICH IS RIGHT FOR
               US. IT MAKES THINGS A LITTLE BIT MESSY FOR SURE BUT WHO CARES,
               IT’S ALL ABOUT OUR MINDSET AND WHAT WE THINK ABOUT THE WORLD
               AROUND US. IT’S BETTER TO KEEP THINGS SIMPLE, AND NOT GET
-              DISAPPOINTED.
+              DISAPPOINTED. */}
             </p>
           </div>
           <Link
