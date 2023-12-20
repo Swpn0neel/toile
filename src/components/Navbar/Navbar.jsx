@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
         {isOpen ? (
           <>
-            <div className="absolute sm:hidden w-screen mt-20 z-10 h-[90vh] bg-[#060B19]">
+            <div className="border-down absolute w-screen mt-20 z-10 h-[95vh] bg-[#060B19]">
               <div className="flex flex-col">
                 <div className="border-down py-10 text-center text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
                   <a
