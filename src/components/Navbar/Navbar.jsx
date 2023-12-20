@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
         {isOpen ? (
           <>
-            <div className="absolute w-screen mt-20 z-10 h-[90vh] bg-[#060B19]">
+            <div className="absolute sm:hidden w-screen mt-20 z-10 h-[90vh] bg-[#060B19]">
               <div className="flex flex-col">
                 <div className="border-down py-10 text-center text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
                   <a
@@ -103,6 +103,37 @@ export default function Navbar() {
                   >
                     GALLERY
                   </a>
+                </div>
+                <div className="border-down py-10 text-center text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
+                  <Link
+                    to="contribute"
+                    onClick={toggleNavbar}
+                    className="hover:cursor-none"
+                  >
+                    ADD+
+                  </Link>
+                </div>
+                <div className="border-down sm:hidden py-10 text-center text-white hover:bg-[#d9d9d9] hover:text-[#060B19] transition-all duration-500">
+                  {user ? (
+                    <button
+                      to="/"
+                      onClick={() => {
+                        logoutUser();
+                        toggleNavbar();
+                      }}
+                      className="hover:cursor-none"
+                    >
+                      LOG OUT
+                    </button>
+                  ) : (
+                    <Link
+                      to="signup"
+                      onClick={toggleNavbar}
+                      className="hover:cursor-none"
+                    >
+                      SIGN UP
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
