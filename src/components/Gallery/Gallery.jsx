@@ -1,7 +1,5 @@
-// import React from "react";
-import "./Gallery.css";
 import React, { useState } from "react";
-// import { galleryimages } from "../../data/GalleryData";
+import "./Gallery.css";
 import {
   getUserDocuments,
   getFile,
@@ -11,7 +9,6 @@ export default function Gallery() {
   const [currImg, setCurrImg] = useState(0);
 
   const [documents, setDocuments] = useState([]);
-  // const [imageID, setImageID] = React.useState();
   const [imageSRC, setImageSRC] = React.useState("");
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -20,7 +17,6 @@ export default function Gallery() {
     getUserDocuments([]).then((data) => {
       if (data) {
         setDocuments(data.documents);
-        // setImageID(data.documents[currImg].image);
         setTitle(data.documents[currImg].title);
         setDescription(data.documents[currImg].description);
         setImageSRC(getFileView(data.documents[currImg].image).href);
@@ -90,21 +86,3 @@ export default function Gallery() {
     </>
   );
 }
-// React.useEffect(() => {
-//   getUserDocuments().then((data) => {
-//     console.log("the title" + data.documents);
-//   });
-//   getFile();
-//   // console.log(galleryimages);
-// }, []);
-
-// const [posts, setPosts] = useState([]);
-// React.useEffect(() => {}, []);
-// getUserDocuments([]).then((posts) => {
-//   if (posts) {
-//     setPosts(posts.documents);
-//   }
-//   console.log(posts);
-// });
-// console.log(posts);
-// const [posts, setPosts] = useState([]);
