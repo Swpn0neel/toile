@@ -61,9 +61,15 @@ export default function Navbar() {
         <div className="flex sm:hidden hoverable justify-end items-center custom2 basis-3/5">
           <div className="pr-7">
             {isOpen ? (
-              <RxCross2 onClick={toggleNavbar} className="text-4xl text-[#D9D9D9]" />
+              <RxCross2
+                onClick={toggleNavbar}
+                className="text-4xl text-[#D9D9D9]"
+              />
             ) : (
-              <GiHamburgerMenu onClick={toggleNavbar} className="text-3xl text-[#D9D9D9]" />
+              <GiHamburgerMenu
+                onClick={toggleNavbar}
+                className="text-3xl text-[#D9D9D9]"
+              />
             )}
           </div>
         </div>
@@ -71,17 +77,29 @@ export default function Navbar() {
           <>
             <div className="absolute w-screen mt-20 z-10 h-[90vh] bg-[#060B19]">
               <div className="text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
-                <a href="#home" className="hover:cursor-none">
+                <a
+                  href="#home"
+                  onClick={toggleNavbar}
+                  className="hover:cursor-none"
+                >
                   HOME
                 </a>
               </div>
               <div className="text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
-                <a href="#about" className="hover:cursor-none">
+                <a
+                  href="#about"
+                  onClick={toggleNavbar}
+                  className="hover:cursor-none"
+                >
                   ABOUT
                 </a>
               </div>
               <div className="text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
-                <a href="#gallery" className="hover:cursor-none">
+                <a
+                  href="#gallery"
+                  onClick={toggleNavbar}
+                  className="hover:cursor-none"
+                >
                   GALLERY
                 </a>
               </div>
