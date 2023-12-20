@@ -76,32 +76,34 @@ export default function Navbar() {
         {isOpen ? (
           <>
             <div className="absolute w-screen mt-20 z-10 h-[90vh] bg-[#060B19]">
-              <div className="text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
-                <a
-                  href="#home"
-                  onClick={toggleNavbar}
-                  className="hover:cursor-none"
-                >
-                  HOME
-                </a>
-              </div>
-              <div className="text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
-                <a
-                  href="#about"
-                  onClick={toggleNavbar}
-                  className="hover:cursor-none"
-                >
-                  ABOUT
-                </a>
-              </div>
-              <div className="text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
-                <a
-                  href="#gallery"
-                  onClick={toggleNavbar}
-                  className="hover:cursor-none"
-                >
-                  GALLERY
-                </a>
+              <div className="flex flex-col">
+                <div className="border-down py-10 text-center text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
+                  <a
+                    href="#home"
+                    onClick={toggleNavbar}
+                    className="hover:cursor-none"
+                  >
+                    HOME
+                  </a>
+                </div>
+                <div className="border-down py-10 text-center text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
+                  <a
+                    href="#about"
+                    onClick={toggleNavbar}
+                    className="hover:cursor-none"
+                  >
+                    ABOUT
+                  </a>
+                </div>
+                <div className="border-down py-10 text-center text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
+                  <a
+                    href="#gallery"
+                    onClick={toggleNavbar}
+                    className="hover:cursor-none"
+                  >
+                    GALLERY
+                  </a>
+                </div>
               </div>
             </div>
           </>
