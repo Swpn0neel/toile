@@ -13,7 +13,7 @@ It's very simple, just follow these process step-by-step:
     ```
 - Once the cloning is complete, run this command to get inside the repository directory :
     ```
-    cd ONFocus
+    cd toile
     ```
 - Create your `.env` file by following the `.env.example` file and your required API keys.
     ```

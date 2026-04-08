@@ -8,31 +8,31 @@ export default function Hero() {
   return (
     <>
       <div className="sm:h-[85vh] grid sm:grid-cols-3 sm:grid-rows-3">
-        <div className="custom2 col-span-2 max-sm:order-1 row-span-2 flex flex-col sm:pb-16 pb-10 justify-end gap-4 max-sm:pt-20 pl-8 sm:pl-20">
-          <p className="fontlg hoverable sm:text-6xl text-5xl text-white">
+        <div className="custom2 sm:col-span-2 max-sm:order-1 row-span-2 flex flex-col sm:pb-16 pb-10 justify-end gap-4 max-sm:pt-20 pl-8 sm:pl-20">
+          <p className="fontlg hoverable sm:text-6xl xl:text-7xl 2xl:text-8xl text-5xl text-white">
             The Magic
           </p>
-          <p className="fontlg hoverable sm:text-6xl text-5xl text-white">
+          <p className="fontlg hoverable sm:text-6xl xl:text-7xl 2xl:text-8xl text-5xl text-white">
             you need the most
           </p>
         </div>
 
-        <div className="custom2 max-sm:order-3  flex max-sm:col-span-2 row-span-2">
+        <div className="custom2 max-sm:order-3 flex row-span-2">
           <img
             src={images[currImg].img}
             className="sm:w-full sm:h-full object-cover"
           />
         </div>
 
-        <div className="custom2 max-sm:order-4 col-span-2 flex items-center justify-center sm:px-20 max-sm:py-10 max-sm:pr-8 pl-8 sm:pl-20">
-          <p className="hoverable text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
+        <div className="custom2 max-sm:order-4 sm:col-span-2 flex items-center sm:px-20 max-sm:py-10 max-sm:pr-8 pl-8 sm:pl-20">
+          <p className="hoverable text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500 max-w-2xl 2xl:max-w-4xl 2xl:text-2xl">
           EMBARK ON A JOURNEY OF ARTISTIC DISCOVERY, WHERE INSPIRATION WEAVES 
           THROUGH THE TAPESTRY OF DESIGN, AND THE REALMS OF ART UNFOLD IN THE 
           MASTERPIECES CRAFTED BY RENOWNED VISIONARIES.
           </p>
         </div>
 
-        <div className="flex max-sm:order-3 max-sm:col-span-2 ">
+        <div className="flex max-sm:order-3 ">
           <div
             onClick={() => {
               const prevImg = currImg > 0 ? currImg - 1 : images.length - 1;
@@ -43,7 +43,7 @@ export default function Hero() {
           >
             <img
               src="assets/arrow.svg"
-              className="h-20 rotate-180 hover:-translate-x-5 transition-all duration-500"
+              className="h-20 2xl:h-32 rotate-180 hover:-translate-x-5 transition-all duration-500"
             />
           </div>
           <div
@@ -56,7 +56,7 @@ export default function Hero() {
           >
             <img
               src="assets/arrow.svg"
-              className="h-20 hover:translate-x-5 transition-all duration-500"
+              className="h-20 2xl:h-32 hover:translate-x-5 transition-all duration-500"
             />
           </div>
         </div>

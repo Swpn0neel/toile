@@ -16,9 +16,9 @@ export default function Navbar() {
     <>
       <div className="fontsm h-20 flex sm:h-28 " id="home">
         <div className="custom2 hoverable flex sm:basis-1/6 basis-2/5 items-center justify-center bg-[#d9d9d9] hover:bg-[#060B19] transition-all duration-500">
-          <img src="assets/logo.svg" width="32rem"></img>
+          <img src="assets/logo.svg" className="w-8 2xl:w-12"></img>
         </div>
-        <div className="custom2 hidden sm:flex basis-1/2 items-center justify-center text-[#D9D9D950]">
+        <div className="custom2 hidden sm:flex basis-1/2 items-center justify-center text-[#D9D9D950] 2xl:text-2xl">
           <div className="pr-10 hover:text-[#d9d9d9] transition-all duration-100">
             <a href="#home" className="hover:cursor-none">
               HOME
@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
         <Link
           to="contribute"
-          className="custom2 hidden sm:flex basis-1/6 items-center justify-center cursor-none text-[#D9D9D950] hover:text-[#d9d9d9] transition-all duration-100"
+          className="custom2 hidden sm:flex basis-1/6 items-center justify-center cursor-none text-[#D9D9D950] hover:text-[#d9d9d9] transition-all duration-100 2xl:text-2xl"
         >
           ADD+
         </Link>
@@ -45,14 +45,14 @@ export default function Navbar() {
           <button
             to="/"
             onClick={logoutUser}
-            className="custom1 new2 hoverable hidden sm:flex basis-1/6 items-center justify-center text-white hover:bg-[#d9d9d9] hover:text-[#060B19] hover:cursor-none transition-all duration-500"
+            className="custom1 new2 hoverable hidden sm:flex basis-1/6 items-center justify-center text-white hover:bg-[#d9d9d9] hover:text-[#060B19] hover:cursor-none transition-all duration-500 2xl:text-2xl"
           >
             LOG OUT
           </button>
         ) : (
           <Link
             to="signup"
-            className="custom1 new2 hoverable hidden sm:flex basis-1/6 items-center justify-center text-white hover:bg-[#d9d9d9] hover:text-[#060B19] hover:cursor-none transition-all duration-500"
+            className="custom1 new2 hoverable hidden sm:flex basis-1/6 items-center justify-center text-white hover:bg-[#d9d9d9] hover:text-[#060B19] hover:cursor-none transition-all duration-500 2xl:text-2xl"
           >
             SIGN UP
           </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
         {isOpen ? (
           <>
-            <div className="border-down absolute w-screen mt-20 z-10 h-[95vh] bg-[#060B19]">
+            <div className="border-down absolute w-full mt-20 z-10 h-[95vh] bg-[#060B19]">
               <div className="flex flex-col">
                 <div className="border-down py-10 text-center text-[#D9D9D9] hover:text-[#d9d9d9] transition-all duration-100">
                   <a

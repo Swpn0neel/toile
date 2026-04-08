@@ -8,7 +8,7 @@ export default function About() {
       <div className="fontsm new3 flex max-sm:flex-col" id="about">
         <div className="flex basis-2/3 flex-col">
           <div className="new2 flex basis-1/3 items-end sm:pb-16 pb-10 sm:pl-20 pl-8">
-            <p className="fontlg hoverable text-6xl text-white">About Us</p>
+            <p className="fontlg hoverable text-4xl sm:text-6xl 2xl:text-8xl text-white">About Us</p>
           </div>
           <div className="grid basis-2/3 grid-cols-2">
             <div className="new1">
@@ -39,7 +39,7 @@ export default function About() {
         </div>
         <div className="flex basis-1/3 flex-col">
           <div className="new2 flex basis-5/6 items-center justify-center sm:p-20 max-sm:py-10 px-8 py-8 text-[#D9D9D950]">
-            <p className="hoverable text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500">
+            <p className="hoverable text-[#D9D9D950] hover:text-[#D9D9D9] transition-all duration-500 max-w-2xl 2xl:max-w-4xl 2xl:text-2xl">
             EMBARK ON A CAPTIVATING ODYSSEY THROUGH THE VAST REALM OF ARTISTIC EXPLORATION, 
             WHERE THE LUMINOUS TAPESTRY OF DESIGN INTERTWINES WITH THE VERY FABRIC OF 
             INSPIRATION. IN THIS ENRICHING JOURNEY, DELVE INTO THE KALEIDOSCOPIC WORLD 
@@ -49,7 +49,7 @@ export default function About() {
           </div>
           <Link
             to="/signup"
-            className="flex hoverable sm:basis-1/6 items-center max-sm:h-24 justify-center cursor-none bg-[#D9D9D9] text-[#D060B19]"
+            className="flex hoverable sm:basis-1/6 items-center max-sm:h-24 justify-center cursor-none bg-[#D9D9D9] text-[#D060B19] 2xl:text-3xl"
           >
             JOIN US NOW
           </Link>

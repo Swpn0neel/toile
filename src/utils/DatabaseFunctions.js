@@ -1,5 +1,5 @@
 import { database, storage } from "../appwrite/appwriteConfig";
-import { ID } from "appwrite";
+import { ID, Permission, Role } from "appwrite";
 
 const databaseID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
 const collectionID = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
@@ -11,7 +11,13 @@ const creatUserDocument = async (userData) => {
       databaseID,
       collectionID,
       ID.unique(),
-      userData
+      userData,
+      [
+        Permission.read(Role.any()),
+        Permission.write(Role.any()),
+        Permission.update(Role.any()),
+        Permission.delete(Role.any())
+      ]
     );
   } catch (e) {
     console.error(e.message);
@@ -53,7 +59,17 @@ const deleteUserDocument = async (documentID) => {
 // File upload
 const uploadFile = async (file) => {
   try {
-    return await storage.createFile(bucketId, ID.unique(), file);
+    return await storage.createFile(
+      bucketId, 
+      ID.unique(), 
+      file,
+      [
+        Permission.read(Role.any()),
+        Permission.write(Role.any()),
+        Permission.update(Role.any()),
+        Permission.delete(Role.any())
+      ]
+    );
   } catch (error) {
     console.log(error);
     return false;
