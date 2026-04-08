@@ -17,40 +17,61 @@ export const AuthProvider = ({ children }) => {
   const loginUser = async (userInfo) => {
     setLoading(true);
     try {
-      let response = await account.createEmailSession(
-        userInfo.email,
-        userInfo.password
-      );
+      try {
+        await account.createEmailSession(
+          userInfo.email,
+          userInfo.password
+        );
+      } catch (err) {
+        // If session is already active, we don't throw, just proceed to get details
+        if (err.code !== 401 && err.type !== 'user_session_already_exists') {
+          throw err;
+        }
+      }
       let accountDetails = await account.get();
-      console.log("Account Deatils: ", accountDetails);
+      console.log("Account Details: ", accountDetails);
       setUser(accountDetails);
     } catch (err) {
-      console.log(err);
+      console.error("Login failed:", err);
     }
 
     setLoading(false);
   };
 
   const logoutUser = async () => {
-    account.deleteSessions("current");
-    setUser(null);
+    try {
+      await account.deleteSession("current");
+      setUser(null);
+    } catch (err) {
+      console.error("Logout failed:", err);
+      // Even if session deletion fails on server, we clear local state
+      setUser(null);
+    }
   };
 
   const registerUser = async (userInfo) => {
     setLoading(true);
     try {
-      let response = await account.create(
+      await account.create(
         ID.unique(),
         userInfo.email,
         userInfo.password,
         userInfo.name
       );
-      await account.createEmailSession(userInfo.email, userInfo.password);
+      
+      try {
+        await account.createEmailSession(userInfo.email, userInfo.password);
+      } catch (err) {
+        if (err.code !== 401 && err.type !== 'user_session_already_exists') {
+          throw err;
+        }
+      }
+
       let accountDetails = await account.get();
       setUser(accountDetails);
       navigate("/");
     } catch (err) {
-      console.log(err);
+      console.error("Registration failed:", err);
     }
     setLoading(false);
   };
