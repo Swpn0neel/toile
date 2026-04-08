@@ -32,7 +32,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="sm:pt-8 max-sm:pr-10 2xl:text-xl">
-            © CREATED BY SWAPNONEEL SAHA & ARINDAM MAJUMDER
+            © CREATED BY SWAPNONEEL SAHA
           </div>
         </div>
       </div>
